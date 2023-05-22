@@ -1,0 +1,172 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    margin: 0;
+    font-family:'Open Sans', sans-serif;
+    background-image: url("./images/bg-mobile.svg");
+    background-size:100% 50%;
+    background-repeat: no-repeat;
+    background-color: hsl(257, 40%, 49%);
+}
+
+header{
+    height: 5vh;
+    margin-bottom: 0;
+}
+
+.logo-container{
+    width: 10rem;
+}
+
+.logo-container img{
+    width: 100%;
+}
+
+.container{
+    margin: 0;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: hsla(0,100%,100%, 80%);
+    text-align: center;
+}
+
+.mockup-container{
+    width: 19rem;
+}
+
+.mockup-container img{
+    width: 100%;
+}
+
+.heading{
+     font-family: 'Poppins', sans-serif;
+     font-size: 1.5rem;
+     color: hsl(0, 100%, 100%);
+     font-weight: 600;
+     margin-bottom: 0;
+}
+
+.description{
+    width: 19rem;
+    font-size: 1rem;
+}
+
+button{
+    width: 12rem;
+    margin-top: 0.5rem;
+    padding: 0.5rem;
+    font-size: 1rem;
+    color: hsl(257, 40%, 49%);
+    border-radius: 2rem;
+    border: none;
+}
+
+
+
+.social-media{
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-media__icon{
+    width: 2.5rem;
+    height: 2.5rem;
+    border: 1px solid hsl(0, 100%, 100%);
+    border-radius: 50%;
+    margin-left: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+i {
+    color: hsl(0, 100%, 100%);
+}
+
+@media screen and (min-width: 1440px) {
+    body{
+        background-image: url("./images/bg-desktop.svg");
+        background-size: 100% 100%;
+        background-position: -45px 0;
+        padding: 4rem;
+
+    }
+
+    header{
+        height: 5vh;
+        position: relative;
+    }
+
+    .logo-container{   
+        width: 14rem;
+    }
+
+    .container{
+        height: 65vh; 
+        margin: 0;
+        margin-top: 5rem;
+        padding: 0;
+        flex-direction: row;
+        justify-content: center;        
+    }
+
+    .mockup-container{
+        width: 47rem;
+        margin: 0;
+    }
+
+    
+    .container__body{
+        box-sizing: content-box;
+        position: relative;
+        bottom: 3.5rem;
+    }
+
+    .heading{
+        width: 30rem;
+        font-size: 2.5rem;
+        text-align: left;
+    }
+
+    .description{
+        margin-left: 2rem;
+        width: 32rem;
+        text-align: left;
+        font-size: 1.1rem;
+    }
+    button{
+        position: relative;
+        left: -10rem;
+        padding: 1rem;
+        font-size: 1.2rem;
+    }
+
+    button:hover{
+        background-color: hsl(300, 69%, 71%);
+        color: hsl(0, 100%, 100%);
+    }
+
+    .social-media{
+        position: absolute;
+        right: 0.5rem;
+        bottom: -12rem;
+        z-index: 100;
+    }
+    .social-media__icon:hover{
+        border-color: hsl(300, 69%, 71%);
+    }
+
+    .social-media__icon:hover i{
+        color: hsl(300, 69%, 71%);
+    }
+
+}
